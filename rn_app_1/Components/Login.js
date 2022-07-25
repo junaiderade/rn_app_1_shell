@@ -26,7 +26,7 @@ const Login = ({navigation}) => {
         ></TextInput>
         <Button
             title="Log in"
-            onPress={() => password == "password" ? navigation.navigate('Feed') : console.log('swag')}
+            onPress={() => password == "password" ? navigation.navigate('DadJoke') : console.log('swag')}
         />
       </View>
     )
