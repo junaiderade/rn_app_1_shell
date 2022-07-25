@@ -11,4 +11,9 @@ node -v
 expo start -c
 🟡 start the app frominside the app folder (which contains package.json)
 npm start OR expo start
-
+++ how to clone a project from github
+- make a folder and do git init
+- then do git clone <github url>
+- do npm install to install dependencies
+++ install yarn
+npm i -g yarn

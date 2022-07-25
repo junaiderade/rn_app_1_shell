@@ -90,4 +90,5 @@ message is gone when the app is built for release: https://stackoverflow.com/que
 
 🟢 BLOCKERS
 🟡 you got an error upon implementing rn navigation and you resolved by first comment in this post: https://stackoverflow.com/questions/69043806/requirenativecomponent-rnsscreenstackheaderconfig-was-not-found-in-the-uimana
-
+++ you had an issue running expo on your phone from pc but you had to do expo start --tunnel and you 
+couldn't even install the tunnel thing because you didnt have yarn. then you installed yarn and then tunnel and it worked
