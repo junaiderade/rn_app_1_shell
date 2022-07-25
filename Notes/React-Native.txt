@@ -34,10 +34,11 @@ Manages library dependencies for your Xcode Projects
 🟡 createStackNavigator function
 - returns an object with 2 properties: Screen and navigator
 - the Navigator should contain Screen elements as its children to define config for routes
-
 🟡 Fast Refresh
 - it is a RN feature that allows you to get near instant feedback for changes in your React components
 - it is enabled by default
+++ Fetch API
+- provides an interface for fetching resources across a network.
 🟡 NavigationContainer component
 - manages navigation tree and contains navigation state
 - must wrap allnavigators structure
@@ -78,6 +79,8 @@ that React Navigation's native stack navigator provides the gestures and animati
 🟢 RESOURCES
 🟡 Expo Docs: https://docs.expo.dev/development/getting-started/
 🟡 React Navigation Docs: https://reactnavigation.org/docs/hello-react-navigation
+++ Fetch request docs: https://developer.mozilla.org/en-US/docs/Web/API/Request
+++ Web APIs docs: https://developer.mozilla.org/en-US/docs/Web/API
 
 
 🟢 QUESTIONS
@@ -87,6 +90,7 @@ message is gone when the app is built for release: https://stackoverflow.com/que
 🟡 what does flex mean
 🟡 what is common stack naviagation
 🟡 what is yarn
+++ what is a promise in js?
 
 🟢 BLOCKERS
 🟡 you got an error upon implementing rn navigation and you resolved by first comment in this post: https://stackoverflow.com/questions/69043806/requirenativecomponent-rnsscreenstackheaderconfig-was-not-found-in-the-uimana

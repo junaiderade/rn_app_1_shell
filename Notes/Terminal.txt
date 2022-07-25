@@ -17,3 +17,5 @@ npm start OR expo start
 - do npm install to install dependencies
 ++ install yarn
 npm i -g yarn
+++ how to start expo on PC when there is an issue connecting
+expo start --tunnel
