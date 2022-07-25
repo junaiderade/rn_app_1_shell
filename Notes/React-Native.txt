@@ -1,0 +1,93 @@
+🔴 REACT NATIVE
+- Last updated: 7/22
+
+🟢 HOW TO
+🟡 Build to Xcode
+- you need to make sure you have Cocoapods installed
+- then you run expo run:ios
+- then you open Xcode
+- go to the ios folder and open the file with extension .xcworkspace within xcode
+🟡 Center an element
+  center: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    hieght: '100%',
+  }
+🟡 Debug
+- shake the phone to access the developer Menu
+- errors and warnings are displayed inside LogBox in your app
+- notifications can be hidden using <> Logbox.ignoreAllLogs() <> this can be helpful when giving product demos
+🟡 Open Developer Menu in build App on ios
+- shake phone
+🟡 How to navigate from one screen to next
+- install react navigation and use that
+🟡 Use a global style sheet
+- write a normal js file and import it where you need and use the js object you import in the style prop
+🟡 How to run an alert
+() => Alert.alert(username)
+
+
+🟢 TERMINOLOGY AND INFO
+🟡 CocoaPods
+Manages library dependencies for your Xcode Projects
+🟡 createStackNavigator function
+- returns an object with 2 properties: Screen and navigator
+- the Navigator should contain Screen elements as its children to define config for routes
+
+🟡 Fast Refresh
+- it is a RN feature that allows you to get near instant feedback for changes in your React components
+- it is enabled by default
+🟡 NavigationContainer component
+- manages navigation tree and contains navigation state
+- must wrap allnavigators structure
+- usually you would render this component at the root of your app
+🟡 Props
+- short for properties, you write them inside your components 
+    - ex:       <Cat name="Maru" />
+    - the component is written like:
+        const Cat = (props) => {
+            return (
+                <View>
+                <Text>Hello, I am {props.name}!</Text>
+                </View>
+            );
+        }
+- while props can be considered like arguments you pass, state, is like a components personal data storage
+- as a general rule, use props to configure a component when it renders. use state to keep track of anyy component data that you expect to change over time
+- this is kinda tricky since u can use props like state but you should not
+🟡 Style
+- all core components accept a prop named style which usually matches how CSS works on the web, except that names are written in camel case
+(backgroundColor instead of background-color)
+- the style prop can be a plain old js object, you can write it seperately and just be like:
+<View style = {styles.container}< and write a js object called styles where you have a nested object called container. look at docs for a better ex.
+🟡 React Navigation
+- presents a straightforward way to navigate between pages using common stack Navigation
+- React Navigation's native stack navigator provides a way for your app to transition between screens and manage navigation history.
+- If your app uses only one stack navigator then it is conceptually similar to how a web browser handles navigation state - your app pushes and pops items from the navigation 
+stack as users interact with it, and this results in the user seeing different screens. A key difference between how this works in a web browser and in React Navigation is 
+that React Navigation's native stack navigator provides the gestures and animations that you would expect on Android and iOS when navigating between routes in the stack.
+
+
+🟢 INFO
+🟡 button does not have a style prop
+🟡 when you are running something in expo ap on your phone, you need to make sure your laptop and phone are conencted to the same network
+🟡 when you are writing on press make sure it is a function like 
+- () => something
+
+🟢 RESOURCES
+🟡 Expo Docs: https://docs.expo.dev/development/getting-started/
+🟡 React Navigation Docs: https://reactnavigation.org/docs/hello-react-navigation
+
+
+🟢 QUESTIONS
+🟡 What does the location you install something have to do with anything?
+🟡 I get this "connect to metro to develop js" popup...how do I ensure that does not happen in PROD?
+message is gone when the app is built for release: https://stackoverflow.com/questions/68423558/how-to-remove-the-connect-to-metro-to-develop-javascript-in-react-native-apps
+🟡 what does flex mean
+🟡 what is common stack naviagation
+🟡 what is yarn
+
+🟢 BLOCKERS
+🟡 you got an error upon implementing rn navigation and you resolved by first comment in this post: https://stackoverflow.com/questions/69043806/requirenativecomponent-rnsscreenstackheaderconfig-was-not-found-in-the-uimana
+

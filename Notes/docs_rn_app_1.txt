@@ -1,0 +1,17 @@
+Goals and Gains
+-----------------------------
+- user creates a profile and goals (by cadence if needed)
+- user joins an accountability group
+- user can follow other users and see their feed
+- users can challenge eachother
+- users can get notified whether a group member fails or succeeds or didn't update a goal
+- user can track their own goals
+
+pages
+- splash page
+- login page
+- sign up page
+- feed page
+- write post page
+- user profile page
+

@@ -1,0 +1,3 @@
+🟢 INFO
+🟡 In a web browser, you can link to different pages using an anchor (<a>) tag. When the user clicks on a link, the URL is pushed to the browser history stack. 
+When the user presses the back button, the browser pops the item from the top of the history stack, so the active page is now the previously visited page. 

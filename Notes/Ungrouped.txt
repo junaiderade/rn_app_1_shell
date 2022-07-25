@@ -1,0 +1,210 @@
+🟢 UNGROUPED
+🟡 Docs Completion
+
+Guides
+    The Basics
+        Intro - Done
+        Core and Native Components - Done
+        React Fundementals - Done
+        Handling Text Input - Done
+        Using a ScrollView - Done
+        Using ListViews - Done
+        Troubleshooting - TBC
+        Platform Specific Code - TBC
+        More Resources - TBC
+    Environment Setup
+        Setting up the dev env - TBC
+        TBC
+    workflow
+        Running on Device - Browsed over
+        Fast Refresh - Browsed over
+        Debugging - ON THIS
+    design
+        style - TBC
+        navigating between screens - TBC
+🟡 If you want to build your app to the computer you have to "eject" from expo
+
+link for THIS note:
+https://reactnative.dev/docs/getting-started
+
+terminal commands: 
+-------------------------------
+sudo npm install expo-cli
+expo init rn_app_1
+cd rn_app_1
+npm start --- to start running the script to pull up the QR code on your phone
+will run the expo app in an iphone simulator
+    npm run ios
+
+will run the expo app in an android simulator
+    npm run android
+
+
+links:
+-------------------------------
+- env setup: https://reactnative.dev/docs/environment-setup
+- "The Basics Docs" docs: https://reactnative.dev/docs/getting-started
+    - Done!!
+    - completed up to React Fundementals on 7/15
+- Networking in React Native: https://reactnative.dev/docs/network
+- Native Directory aka community driven native componenents: https://reactnative.directory/
+- components and APIs docs: https://reactnative.dev/docs/components-and-apis
+- ReactJS docs: https://reactjs.org/docs/getting-started.html
+- comprehensive guide to JS: https://reactjs.org/docs/jsx-in-depth.html
+- react hooks intro: https://reactjs.org/docs/hooks-intro.html#motivation
+- troubleshooting page: https://reactnative.dev/docs/troubleshooting
+- adding custom native code: https://docs.expo.dev/workflow/customizing/
+
+
+
+questions
+--------------------------------
+- when should i use <><> vs </>, why are there different ones in the React Docs?
+
+blockers
+--------------------------------
+- because of that black rectangle at top of iphone you need to have top padding
+
+NOTES:
+------------------------------------------------------------
+
+How to change the name of your react app
+-------------------------------
+- chnage the name and then search for that name in VS code and change it everywhere else as well
+
+What is RN?
+-------------------------------
+
+
+Setup
+-------------------------------
+- in order to run your expo app you need the expo client app on your phone and your phone should be connected
+to the same network as your laptop
+
+What are Componenets?
+-------------------------------
+- the cool thing about *components* is you can render them multiple times in multiple places without repeating your code!
+- a *parent component* renders other components which are called *child components*
+- *Native Componenents* are components which are turned into native components at runtime
+- *React elements* let you describe what you want to see on the screen
+
+Functional vs Class components
+-------------------------------
+- in React, you can make components using either functions or classes
+- React Native uses the same API structure as React components
+- functional components start as a function ex: const Cat = () => {};
+- a *component* is a blueprint. Whatevr a function compoenent returns is rendered as a react element.
+- for class components, you need to also import "Component" from react since they start as a class which expents Component from React
+- class components also have a render(function), whatever is inside is returned as a react element
+- one of the reasons functional components are preferable to class components is because managing lifecycle effect in
+class components is a huge pain
+- functional components are also more dry
+- according to reddit, class componenets are dead
+- React initially added function componenets because they didnt require lifecycle methods or internal state. When hooks were released,
+everythign could become a functional component
+- class components add a lot more code
+
+Hooks
+-------------------------------
+- *React Hooks* allows function components to have state (before they could not)
+- *Hooks* were introduced in React Native 0.59
+- a *hook* is a kind of funtion that lets you "hook into" react features
+
+    Use State Hook
+    -------------------------------
+- for a funtional component you can add state, using the useState hook
+- *useState* is a hook that lets you add state to a function component
+- you can use useState to track any type of data
+- calling useState creates a "state variable" with an initial value and a function to set that state's variable value
+    - ex:
+    const [timesPetted, setTimesPetted] = useState(0)
+    const [isHungry, setIsHungry] = useState(true);
+    [<getter>, <setter>] = useState(<initialValue>)
+
+
+Core Componenents
+-------------------------------
+- a *view* is the basic building block of UI: a small rectangular element on the screen which can be used to display anything
+- even the smallest visual elements of an app, like a line of text or a button, are kinds of views
+- *views* can contain other views
+- core components have built in props which you can use such as style
+
+    button
+    -------------------------------
+- has on OnPress Prop which you can use
+
+    TextInput
+    -------------------------------
+- has on OnChangeText prop that takes a function to be called every time the text changed and an onSubmitEditing prop
+that takes a function to be called when the text is submitted
+
+ScrollView
+-------------------------------
+- the ScrollView is a generic scrolling container that can contain multiple components and views. the scrollable items can
+be heterogenous and you can scroll both vertically and horizontally (by setting the horizontal property)
+- scrollviews can be configured to allow paging through swiping using the pagingenabled props
+- on android, swiping horizontally between views can be implemented using the ViewPager component
+- On iOS a ScrollView with a single item can be used to allow the user to zoom content. Set up the maximumZoomScale and minimumZoomScale props and your user will be able to use pinch and expand gestures to zoom in and out.
+- The scrollview works best to show a SMALL number of things of a limited size. All the elements and viewsof a ScrollView are
+rendered, even if not currently shown on the screen.
+- If you habe a long list of items which cannot fit on the screen, you should use a *FlatList* instead
+
+FlatList
+------------------------------
+- Displays a scrolling list of changing, but similarly structured, data. Flatlist works well for long lists of data,
+where the number of items might change over time.
+- unlike ScrollView, Flatlist only renders elements that are currently showin go the screen, not all elements at once
+- it requires 2 props: data and renderItem. 
+- data is he source of information for the list
+- renderItem takes one item from the source and returns a formatted component to render
+- commonly used to display data that is fetched from a server
+
+SectionList
+------------------------------
+- if you want to render a set of data broken into logical sections, maybe with section headers, then a SectionList is what u shoudl use
+- commonly used to display data fetched from a server
+
+JSX
+-------------------------------
+- *JSX* is a syntax which lets you write elements inside js
+- when you are writing jsx, you write the js in curly braces BUT a js object (a hashmap) is also denoted in curly braces so if you want to pass a js object you
+have to use double curly braces
+
+state
+-------------------------------
+- *state* is useful for handling data that changes over time or that comes from user interaction. It gives your component memory
+
+Platform Specific code
+-------------------------------
+- when building cross platform code, you will want to re-use as much code as possible
+but there will be times when you need to write platform specific code
+- you can do this in 2 ways
+    - platform module
+    - useing platform specific file extensions
+
+
+ungrouped
+-------------------------------
+- your component names MUST start with a capital letter
+- to fetch data from a server, you need to learn about networking in React Native
+- metro is the JS bundler for React Native
+- A **bundler** is a development tool that combines many JavaScript code files into a single one that is production-ready loadable in the browser. A fantastic feature of a bundler is that it generates a dependency graph as it traverses your first code files. 
+
+
+Running on Device
+-----------------------------------------------
+- in order to build and run your app on a device, you will need to eject and install native dependencies
+from the environment setup guide
+
+    Running on an iphone from mac
+    -----------------------------------------------
+- connect your device to mac
+
+Caveats of expo
+-----------------------------------------------
+- you will eventually need to "eject" to create a native build
+- Because you don't build any native code when using Expo to create a project, it's not possible to include custom 
+native modules beyond the React Native APIs and components that are available in the Expo client app.
+- 
+
+

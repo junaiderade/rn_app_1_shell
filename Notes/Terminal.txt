@@ -1,0 +1,14 @@
+🟢 TERMINAL
+🟡 Install cocoa pods prior to building for ios
+sudo gem install cocoapods
+🟡 Install react Navigation
+npm install @react-navigation/native @react-navigation/native-stack
+🟡 Install peer dependencies for Expo for react navigation
+expo install react-native-screens react-native-safe-area-context
+🟡 Check node version
+node -v
+🟡 run expo and clear your expo cache
+expo start -c
+🟡 start the app frominside the app folder (which contains package.json)
+npm start OR expo start
+
