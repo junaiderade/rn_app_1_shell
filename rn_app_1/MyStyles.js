@@ -8,6 +8,13 @@ export default StyleSheet.create({
         hieght: '100%'
       },
       text: {
+        padding: 50,
+        textAlign: 'center',
+        fontSize: 20
+      },
+      secondary_text:{
+        padding:30,
+        textAlign: 'center',
         fontSize: 20
       },
       textinput: {

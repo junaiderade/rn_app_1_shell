@@ -17,13 +17,15 @@ const vader_pic = {
 function HomeScreen({navigation}) {
   return (
     <View style = {MyStyles.center}>
-    <Text style = {styles.text}>Test App</Text>
+    <Text style = {MyStyles.text}>Playground</Text>
+    <Text style = {MyStyles.secondary_text}>This is a testing app junaid is building for learning purposes.</Text>
     <Button
-    title="Log in"
+    title="Login Functionality"
     onPress={() => navigation.navigate('Login')}
     />
     <Button
-    title="Sign Up"
+    title="Dad Joke API"
+    onPress={() => navigation.navigate('DadJoke')}
     />
     </View>
   );
@@ -38,9 +40,7 @@ export default function App() {
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen}/>
         <Stack.Screen name="Login" component={Login}/>
-        <Stack.Screen name="Feed" component={Feed}/>
         <Stack.Screen name="DadJoke" component={DadJoke}/>
-
       </Stack.Navigator>
 
     </NavigationContainer>
@@ -66,14 +66,3 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  center: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    hieght: '100%'
-  },
-  text: {
-    fontSize: 30
-  }
-});

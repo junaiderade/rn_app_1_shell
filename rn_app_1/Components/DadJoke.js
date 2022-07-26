@@ -4,9 +4,26 @@ import {Text, View, TextInput, Button, Alert } from 'react-native';
 
 const DadJoke = (props) => {
 
-    const [dadJoke,setDadJoke] = React.useState("default");
+    const [dadJoke,setDadJoke] = React.useState("");
 
-    const getDadJokeFromAPI = () => console.log("yolo");
+    const getDadJokeFromAPI = async() => {
+      try{
+        const response = await fetch(
+          'https://icanhazdadjoke.com/',
+          {
+            method: 'GET',
+            headers: 
+              {
+                Accept: 'application/json'
+              }
+          });
+        const json = await response.json();
+        setDadJoke(json.joke);
+      }catch (error){
+        console.log("error is" + error);
+      }
+    }
+    //you wrote this code based on the fetch a random dad joke section: https://icanhazdadjoke.com/api#api-response-format
     
     const getMoviesFromApiAsync = async () => {
         try {
@@ -18,20 +35,16 @@ const DadJoke = (props) => {
         } catch (error) {
           console.error(error);
         } finally {
-            console.log("it works!")
+          console.log("it works!")
         }
       };
 
     return (
         <View style = {MyStyles.center}>
-        <Text style={MyStyles.text}>{dadJoke}</Text>
-        <Button
-            onPress={getMoviesFromApiAsync}
-            title = "Click for a Movie"
-          />
+        <Text style={MyStyles.secondary_text}>{dadJoke}</Text>
         <Button
             onPress={getDadJokeFromAPI}
-            title = "Click for a Dad Joke"
+            title = "Click for a New Dad Joke"
           />
         </View>
     )
