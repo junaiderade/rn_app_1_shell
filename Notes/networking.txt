@@ -1,0 +1,12 @@
+
++++RESOURCES
+++twitter API dashboard
+https://developer.twitter.com/en/portal/dashboard
+- you logged in with junaiderade
+- you actually used this API in the past to fetch tweets
+🟡 Dad Joke API Docs: https://icanhazdadjoke.com/api
+🟡 HHTP Docs: https://developer.mozilla.org/en-US/docs/Web/HTTP
+🟡 Fetch Request Article: https://www.freecodecamp.org/news/how-to-make-api-calls-with-fetch/
+🟡 API calls in react native: https://enappd.com/blog/how-to-make-api-calls-in-react-native-apps/125/
+++ react twitter app API
+https://developer.twitter.com/en/docs/tutorials/building-an-app-to-stream-tweets

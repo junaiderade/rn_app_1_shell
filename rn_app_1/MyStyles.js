@@ -15,7 +15,7 @@ export default StyleSheet.create({
       secondary_text:{
         padding:30,
         textAlign: 'center',
-        fontSize: 20
+        fontSize: 15
       },
       textinput: {
         height: 40,
