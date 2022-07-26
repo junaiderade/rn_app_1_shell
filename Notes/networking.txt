@@ -10,3 +10,16 @@ https://developer.twitter.com/en/portal/dashboard
 🟡 API calls in react native: https://enappd.com/blog/how-to-make-api-calls-in-react-native-apps/125/
 ++ react twitter app API
 https://developer.twitter.com/en/docs/tutorials/building-an-app-to-stream-tweets
+++ API Guides for timeline
+https://developer.twitter.com/en/docs/twitter-api/tweets/timelines/api-reference/get-users-id-tweets#tab1
+
+
++++HOW TO
+++ Use Twitter API
+1. go to twitter docs and open up their postman workspace (this will be different from your own workspace)
+2. go to the twitter developer profile and look at your project and get bearer token
+3. in your own workpsace try replicating one of teh requests from the twitter workspace (you wil need to add a bearer token authorization)
+4. once that work, on the right hand side of the page, there will be a code snippet button, open that and select "Javscript Fetch"
+5. copy that code into project and use the fetch method to change some existing code
+++ Reset the Twitter Postman workspace
+- just click refresh lol

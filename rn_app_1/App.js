@@ -7,7 +7,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import MyStyles from './MyStyles';
 import DadJoke from './Components/DadJoke';
 import Login from './Components/Login';
-import TwitLookup from './Components/TwitLookup';
+import TweetByID from './Components/TweetByID';
+import TopTweets from './Components/TopTweets';
 
 function HomeScreen({navigation}) {
   return (
@@ -19,12 +20,16 @@ function HomeScreen({navigation}) {
     onPress={() => navigation.navigate('Login')}
     />
     <Button
-    title="Dad Joke API (Public API)"
+    title="Get Random Dad Joke (Public API)"
     onPress={() => navigation.navigate('DadJoke')}
     />
     <Button
-    title="Twitter API (Private API)"
-    onPress={() => navigation.navigate('TwitLookup')}
+    title="Get Tweet by ID (Private API)"
+    onPress={() => navigation.navigate('TweetByID')}
+    />
+    <Button
+    title="Get Top 10 Tweets by Username (Private API)"
+    onPress={() => navigation.navigate('TopTweets')}
     />
     </View>
   );
@@ -39,7 +44,8 @@ export default function App() {
         <Stack.Screen name="Home" component={HomeScreen}/>
         <Stack.Screen name="Login" component={Login}/>
         <Stack.Screen name="DadJoke" component={DadJoke}/>
-        <Stack.Screen name='TwitLookup' component={TwitLookup}/>
+        <Stack.Screen name='TweetByID' component={TweetByID}/>
+        <Stack.Screen name="TopTweets" component={TopTweets}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
