@@ -1,3 +1,26 @@
 🟢 INFO
 🟡 In a web browser, you can link to different pages using an anchor (<a>) tag. When the user clicks on a link, the URL is pushed to the browser history stack. 
 When the user presses the back button, the browser pops the item from the top of the history stack, so the active page is now the previously visited page. 
+
++++TERMINOLOGY
+++ asynchronous
+- you use fetch t make a call to an external API without halting the execution of other instructions
+++ HHTP
+- this stands for hypertext transfer protocol and it is used for transfering data
+- it follows a classic client-server model, with a client (usually a web broswer) opening a connection to make a request and then waiting until
+it receives a response
+- HTTP is a stateless protocol, meaning the server does not keep any data between 2 requests
+++promise
+- an object which represents the eventual completion (or failure) of an asynchronous operation and its resulting value
+++ fetch()
+- returns a promise
+
+
++++RESOURCES
+++ HHTP Docs: https://developer.mozilla.org/en-US/docs/Web/HTTP
+++ Dad Joke API: https://icanhazdadjoke.com/api
+++ Fetch Request Article: https://www.freecodecamp.org/news/how-to-make-api-calls-with-fetch/
+
+
++++Questions
+- what is the header?

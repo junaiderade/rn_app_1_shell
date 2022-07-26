@@ -6,6 +6,7 @@ Goals and Gains
 - users can challenge eachother
 - users can get notified whether a group member fails or succeeds or didn't update a goal
 - user can track their own goals
+- meeting calendar
 
 pages
 - splash page

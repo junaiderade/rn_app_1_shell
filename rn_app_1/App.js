@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Button, Text, View, Image, ScrollView } from 'react-native';
 import React from "react"
+import DadJoke from './Components/DadJoke';
 import Feed from './Components/Feed';
 import Login from './Components/Login';
 import { NavigationContainer} from '@react-navigation/native';
@@ -16,7 +17,7 @@ const vader_pic = {
 function HomeScreen({navigation}) {
   return (
     <View style = {MyStyles.center}>
-    <Text style = {styles.text}>Quoter</Text>
+    <Text style = {styles.text}>Test App</Text>
     <Button
     title="Log in"
     onPress={() => navigation.navigate('Login')}
@@ -38,6 +39,8 @@ export default function App() {
         <Stack.Screen name="Home" component={HomeScreen}/>
         <Stack.Screen name="Login" component={Login}/>
         <Stack.Screen name="Feed" component={Feed}/>
+        <Stack.Screen name="DadJoke" component={DadJoke}/>
+
       </Stack.Navigator>
 
     </NavigationContainer>

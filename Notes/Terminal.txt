@@ -13,3 +13,11 @@ expo start -c
 npm start OR expo start
 🟡 see what branch you are on
 git branch
+++ how to clone a project from github
+- make a folder and do git init
+- then do git clone <github url>
+- do npm install to install dependencies
+++ install yarn
+npm i -g yarn
+++ how to start expo on PC when there is an issue connecting
+expo start --tunnel
