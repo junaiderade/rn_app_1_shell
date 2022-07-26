@@ -21,3 +21,11 @@ git branch
 npm i -g yarn
 ++ how to start expo on PC when there is an issue connecting
 expo start --tunnel
+++ how to pull latest code from github while taking local changes into consideration
+git fetch origin
+git status (then you will see something about how behind you are or what conflicts you have)
+git pull (once conflicts are resolved)
+
++++RESOURCES
+how to pull
+https://stackoverflow.com/questions/6335681/how-do-i-get-the-latest-version-of-my-code

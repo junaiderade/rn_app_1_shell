@@ -21,10 +21,7 @@ it receives a response
 🟡3JS
 
 🟡+RESOURCES
-🟡 HHTP Docs: https://developer.mozilla.org/en-US/docs/Web/HTTP
-🟡 Dad Joke API: https://icanhazdadjoke.com/api
-🟡 Fetch Request Article: https://www.freecodecamp.org/news/how-to-make-api-calls-with-fetch/
-🟡 API calls in react native: https://enappd.com/blog/how-to-make-api-calls-in-react-native-apps/125/
+
 
 
 🟡+Questions
