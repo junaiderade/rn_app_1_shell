@@ -11,4 +11,5 @@ node -v
 expo start -c
 🟡 start the app frominside the app folder (which contains package.json)
 npm start OR expo start
-
+🟡 see what branch you are on
+git branch
