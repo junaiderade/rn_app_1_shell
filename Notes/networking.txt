@@ -12,7 +12,8 @@ https://developer.twitter.com/en/portal/dashboard
 https://developer.twitter.com/en/docs/tutorials/building-an-app-to-stream-tweets
 ++ API Guides for timeline
 https://developer.twitter.com/en/docs/twitter-api/tweets/timelines/api-reference/get-users-id-tweets#tab1
-
+++ API Pagination
+https://nordicapis.com/everything-you-need-to-know-about-api-pagination/
 
 +++HOW TO
 ++ Use Twitter API
@@ -23,3 +24,7 @@ https://developer.twitter.com/en/docs/twitter-api/tweets/timelines/api-reference
 5. copy that code into project and use the fetch method to change some existing code
 ++ Reset the Twitter Postman workspace
 - just click refresh lol
+
++++TERMINOLOGY
+++Pagination
+- flash crash

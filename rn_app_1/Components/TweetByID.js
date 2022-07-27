@@ -8,7 +8,7 @@ const TweetByID = (props) => {
 
     //YOU GOT THIS ALL FROM POSTMAN! details in how to
     var myHeaders = new Headers();
-    myHeaders.append("Authorization", "Bearer ");
+    myHeaders.append("Authorization", "Bearer");
     myHeaders.append("Cookie", "guest_id=v1%3A165885193732030660");
 
     var requestOptions = {

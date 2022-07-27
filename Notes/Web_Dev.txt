@@ -19,6 +19,7 @@ it receives a response
 🟡 endpoint
 - a unique URL you call to interact with another system
 🟡3JS
+🟡 Paginati
 
 🟡+RESOURCES
 

@@ -75,6 +75,7 @@ that React Navigation's native stack navigator provides the gestures and animati
 🟡 when you are running something in expo ap on your phone, you need to make sure your laptop and phone are conencted to the same network
 🟡 when you are writing on press make sure it is a function like 
 - () => something
+🟡 when you try to write a for loop that won't work but a map function will...same thing I think for writing a const vs a function
 
 🟢 RESOURCES
 🟡 Expo Docs: https://docs.expo.dev/development/getting-started/
@@ -91,6 +92,7 @@ message is gone when the app is built for release: https://stackoverflow.com/que
 🟡 what is common stack naviagation
 🟡 what is yarn
 ++ what is a promise in js?
+++ why use the map function instead of being normal
 
 🟢 BLOCKERS
 🟡 you got an error upon implementing rn navigation and you resolved by first comment in this post: https://stackoverflow.com/questions/69043806/requirenativecomponent-rnsscreenstackheaderconfig-was-not-found-in-the-uimana

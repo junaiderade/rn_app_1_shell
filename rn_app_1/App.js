@@ -8,7 +8,7 @@ import MyStyles from './MyStyles';
 import DadJoke from './Components/DadJoke';
 import Login from './Components/Login';
 import TweetByID from './Components/TweetByID';
-import TopTweets from './Components/TopTweets';
+import TwitterWordJumble from './Components/TwitterWordJumble';
 
 function HomeScreen({navigation}) {
   return (
@@ -28,8 +28,8 @@ function HomeScreen({navigation}) {
     onPress={() => navigation.navigate('TweetByID')}
     />
     <Button
-    title="Get Top 10 Tweets by Username (Private API)"
-    onPress={() => navigation.navigate('TopTweets')}
+    title="TwitterWordJumble (Private API)"
+    onPress={() => navigation.navigate('TwitterWordJumble')}
     />
     </View>
   );
@@ -45,7 +45,7 @@ export default function App() {
         <Stack.Screen name="Login" component={Login}/>
         <Stack.Screen name="DadJoke" component={DadJoke}/>
         <Stack.Screen name='TweetByID' component={TweetByID}/>
-        <Stack.Screen name="TopTweets" component={TopTweets}/>
+        <Stack.Screen name="TwitterWordJumble" component={TwitterWordJumble}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

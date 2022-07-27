@@ -5,15 +5,16 @@ export default StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        hieght: '100%'
       },
       text: {
-        padding: 50,
+        paddingTop: 20,
+        paddingHorizontal: 20,
         textAlign: 'center',
         fontSize: 20
       },
       secondary_text:{
-        padding:30,
+        paddingTop:20,
+        paddingHorizontal: 20,
         textAlign: 'center',
         fontSize: 15
       },
