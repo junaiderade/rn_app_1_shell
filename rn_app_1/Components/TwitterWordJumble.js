@@ -8,7 +8,7 @@ const TwitterWordJumble = (props) => {
     const [username,setusername] = React.useState("");
 
     var myHeaders = new Headers();
-    myHeaders.append("Authorization", "Bearer");
+    myHeaders.append("Authorization", "Bearer ");
     myHeaders.append("Cookie", "guest_id=v1%3A165885193732030660");
 
     var requestOptions = {
@@ -40,23 +40,21 @@ const TwitterWordJumble = (props) => {
     }
 
     const organizeWords = (tweets) => {
-        
-        let words = new Set();
 
+        let unique_words = new Set();
+        
         for(let tweet of tweets){
-            // let text = tweet.text.split(" ");
-            console.log(tweet.text)
-            // for(let word of text){
-            //     console.log(word)
-            //     if(!words.has(word)){
-            //         words.add(word)
-            //     }
-            // }
-            
+            let words = tweet.text.split(" ");
+            for(let word of words){
+                if(!unique_words.has(word)){
+                    unique_words.add(word);
+                }
+            }
         }
-        for(let word of words){
-            console.log(word)
-        }
+
+        let arr = Array.from(unique_words)
+        console.log(arr.length)
+
     }
 
     return(
@@ -75,5 +73,7 @@ const TwitterWordJumble = (props) => {
     
 
 };
+
+//change the name of this to word cloud
 
 export default TwitterWordJumble;
