@@ -1,0 +1,23 @@
+🟢 Rules
+🟡 Once this project is done, move all of the info you got into a respective note like terminal, networking, etc
+
+🟢 Pitfalls
+🟡 When cloning a github project, you should know that you will basically get the root folder of the project
+🟡 when you are doing npm install do it not in the shell folder or really the root folder, do it in the folder
+with your react native app
+
+🟢 How to
+🟡 Clone a github project
+1. make a shell folder
+2. do git init in that shell folder
+3. do git clone <github url>
+🟡 Make a branch
+git checkout -b <new branch name>
+
+🟢 Terminology
+🟡 package-lock.json
+- an npm install regenerates this file, that is why if you do just an npm install on your app folder and nothing else,
+your git status will still change
+🟡 package.json
+- exists at the root of a js/node project. it holds metadata relevant to the project and it is used for managing the
+project's dependencies, scripts, version, and more.

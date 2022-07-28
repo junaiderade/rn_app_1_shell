@@ -13,19 +13,26 @@ expo start -c
 npm start OR expo start
 🟡 see what branch you are on
 git branch
-++ how to clone a project from github
+🟡 how to clone a project from github
 - make a folder and do git init
 - then do git clone <github url>
 - do npm install to install dependencies
-++ install yarn
+🟡 install yarn
 npm i -g yarn
-++ how to start expo on PC when there is an issue connecting
+🟡 how to start expo on PC when there is an issue connecting
 expo start --tunnel
-++ how to pull latest code from github while taking local changes into consideration
+🟡 how to pull latest code from github while taking local changes into consideration
 git fetch origin
 git status (then you will see something about how behind you are or what conflicts you have)
 git pull (once conflicts are resolved)
+🟡 create a new branch and switch to it
+git checkout -b <new branch name>
 
-+++RESOURCES
+🟢INFO
+🟡 when you are cloning a react native project ONLY do your npm install inside the actual
+react native project folder, i think even with just this my package-lock.json changed
+
+
+🟢RESOURCES
 how to pull
 https://stackoverflow.com/questions/6335681/how-do-i-get-the-latest-version-of-my-code
